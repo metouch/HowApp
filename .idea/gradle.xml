@@ -12,7 +12,6 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/howtest" />
             <option value="$PROJECT_DIR$/howtry" />
-            <option value="$PROJECT_DIR$/speechDemo" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

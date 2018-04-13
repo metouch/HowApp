@@ -58,15 +58,21 @@
         <activity
             android:name="th.how.page.main.MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
         <activity
             android:name="th.how.page.second.SecondActivity"
             android:label="@string/title_activity_second"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
         <activity
             android:name="th.how.page.third.ThirdActivity"
             android:label="@string/title_activity_third"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
 
         <provider
             android:name="th.ipc.provider.presenter.NewsContentProvider"
@@ -75,6 +81,7 @@
             android:exported="true"
             android:grantUriPermissions="false"
             android:permission="permission.th.how.app.provider">
+
             <grant-uri-permission android:path="/NEWS_ENTITY" />
         </provider>
 
@@ -87,9 +94,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="th.how.page.main.RobotChatActivity">
-
-        </activity>
     </application>
 
 </manifest>

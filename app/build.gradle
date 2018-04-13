@@ -34,9 +34,9 @@ android {
         targetGenDir 'src/main/java'
     }
     externalNativeBuild {
-        cmake {
-            path "CMakeLists.txt"
-        }
+//        cmake {
+//            path "CMakeLists.txt"
+//        }
     }
     sourceSets {
         main {
@@ -58,5 +58,4 @@ dependencies {
     compile 'com.squareup.retrofit2:retrofit:2.4.0'
     testCompile 'junit:junit:4.12'
     debugCompile 'com.amitshekhar.android:debug-db:1.0.0'
-    compile files('libs/Msc.jar')
 }
