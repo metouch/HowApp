@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#a0a0a0" />
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lin1"
+        android:layout_marginBottom="50dp"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:transcriptMode="normal" />
+    <!--</ScrollView>-->
+
+    <View
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#a0a0a0"
+        android:layout_marginBottom="51dp"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.robot.CircleImageView
+            android:id="@+id/iv_audio"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ac_robot_mic" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+
+                <EditText
+                    android:id="@+id/ed_content"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4dp"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:background="@drawable/ac_robot_et_shape"/>
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ac_robot_btn_shape"
+                    android:layout_marginLeft="10dp"
+                    android:text="发送"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/tv_audio"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shape_audio"
+                android:gravity="center"
+                android:layout_marginLeft="6dp"
+                android:text="开始录音"
+                android:visibility="gone" />
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

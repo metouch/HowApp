@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="gravity" >
+        <enum name="left" value="1"/>
+        <enum name="center" value="2"/>
+        <enum name="right" value="3"/>
+        <enum name = "top" value="4"/>
+        <enum name="bottom" value="5"/>
+    </attr>
+
+    <attr name="cycle_strategy">
+        <enum name="no" value="0"/>
+        <enum name="max" value="1"/>
+        <enum name="border" value="2"/>
+    </attr>
+
+    <attr name="layout_mode">
+        <enum name="frame" value="0"/>
+        <enum name="vertical" value="1"/>
+    </attr>
+
+    <declare-styleable name="EasierCarousel">
+        <attr name="cycle_strategy"/>
+        <attr name="delay_time" format="integer"/>
+        <attr name="stop_while_touch" format="boolean"/>
+        <attr name="layout_mode"/>
+    </declare-styleable>
+    <declare-styleable name="LabelView">
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="itemMargin" format="dimension"/>
+        <attr name="hSpacePadding" format="dimension"/>
+        <attr name="vSpacePadding" format="dimension"/>
+        <attr name="minItemWidth" format="dimension"/>
+        <attr name="gravity"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+</resources>
