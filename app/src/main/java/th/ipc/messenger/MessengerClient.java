@@ -101,7 +101,6 @@ public class MessengerClient extends AppCompatActivity{
                 dbOperation();
             }
         }, 5000);
-
     }
 
     @Override

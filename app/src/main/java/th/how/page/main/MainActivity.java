@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity
         RecyclerView recyclerView = (RecyclerView)findViewById(R.id.content_recycler_view);
         recyclerView.setAdapter(new MainAdapter());
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+
     }
 
     @Override
